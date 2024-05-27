@@ -3,13 +3,13 @@
 
 <img align = "right" alt ="coding" width ="200" src ="https://giphy.com/gifs/looneytunesworldofmayhem-world-of-mayhem-looney-tunes-ltwom-RbDKaczqWovIugyJmW ">
 
-- 🔭 I’m currently working on **Portfolio Optimization**
+- 🔭  Currently working on **Portfolio Optimization**
 
-- 🌱 I’m currently learning **Qiskit Pulse, Julia, Tensorflow, Pytorch**
+- 🌱  Learning **Qiskit Pulse, Julia, Tensorflow, Pytorch**
 
 - 💬 Ask me about **Qiskit, Quantum optimization, Quantum Algorithms**
 
-- 📫 How to reach me **awadhootloharkar007@gmail.com**
+- 📫 Reach me @ **awadhootloharkar007@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
