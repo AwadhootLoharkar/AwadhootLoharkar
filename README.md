@@ -1,7 +1,6 @@
 <h1 align="center">Hi 👋, I'm Awadhoot Loharkar</h1>
 <h3 align="center">Young Researcher</h3>
 
-<img align="right" alt="coding" width="400" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzM1eHVvNG5ueXZlMG82ajU2bXRmOGtlZDBuYnVlZ29jbmRybGZkZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RbDKaczqWovIugyJmW/giphy.gif" style="border-radius: 20px;">
 
 - 🔭  Currently working on **Portfolio Optimization**
 
