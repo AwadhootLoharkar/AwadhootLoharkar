@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Awadhoot Loharkar</h1>
 <h3 align="center">Young Researcher</h3>
 
-<img align = "right" alt ="coding" width ="200" src ="https://giphy.com/gifs/looneytunesworldofmayhem-world-of-mayhem-looney-tunes-ltwom-RbDKaczqWovIugyJmW ">
+<img align = "right" alt ="coding" width ="200" src ="[https://giphy.com/gifs/looneytunesworldofmayhem-world-of-mayhem-looney-tunes-ltwom-RbDKaczqWovIugyJmW](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtHXPlBh7ULJ6xvz9dTjamYlWNjhcqz1s05FoxGU9nPg&s) ">
 
 - 🔭  Currently working on **Portfolio Optimization**
 
