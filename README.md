@@ -4,7 +4,7 @@
 
 - 🔭  Currently working on **Portfolio Optimization**
 
-- 🌱  Learning **Qiskit Pulse, Julia, Tensorflow, Pytorch**
+- 🌱  Learning ** Julia, Tensorflow, Pytorch**
 
 - 💬 Ask me about **Qiskit, Quantum optimization, Quantum Algorithms**
 
