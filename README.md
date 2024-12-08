@@ -4,7 +4,7 @@
 
 - 🔭  Currently working on **Variational Quantum Algorithms**
 
-- 🌱  Learning **Julia, Tensorflow, Pytorch**
+- 🌱  Applying Quantum computing to solve **business problems**
 
 - 💬 Ask me about **Qiskit, Quantum optimization, Quantum Algorithms**
 
