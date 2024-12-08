@@ -2,9 +2,9 @@
 <h3 align="center">Young Researcher</h3>
 
 
-- 🔭  Currently working on **Portfolio Optimization**
+- 🔭  Currently working on **Variational Quantum Algorithms**
 
-- 🌱  Learning ** Julia, Tensorflow, Pytorch**
+- 🌱  Learning **Julia, Tensorflow, Pytorch**
 
 - 💬 Ask me about **Qiskit, Quantum optimization, Quantum Algorithms**
 
