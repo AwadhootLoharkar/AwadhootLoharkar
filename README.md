@@ -1,29 +1,16 @@
-<h1 align="center">Hi 👋, I'm Awadhoot Loharkar</h1>
-<h3 align="center">Young Researcher</h3>
+<h2 align="center">Hi there 👋</h2>
+<img src="https://komarev.com/ghpvc/?username=awadhootloharkar&color=brightgreen" alt="watching_count" />
 
+My name is Awadhoot Loharkar.  
+I am originally from India and currently pursuing my Master's in Quantum Technologies and Engineering at Université de Bourgogne, Dijon, France, under the Erasmus Mundus scholarship (QuanTEEM).  
+I am passionate about quantum physics, engineering, and developing innovative solutions in semi-autonomous drones and vehicles.
 
-- 🔭  Currently working on **Variational Quantum Algorithms**
+Check out my work on Quantum Fourier Transform (QFT) for option pricing using Qiskit: [Awadhoot's QFT Project](https://github.com/awadhootloharkar/qft-option-pricing). *(Update this link with your actual project link once ready.)*
 
-- 🌱  Applying Quantum computing to solve **business problems**
+Outside of academics, I enjoy photography, traveling, and playing the ukulele to sing songs by artists like KK, Mustafa Zahid, and Atif Aslam. I also aim to maintain a fitness routine focused on muscle gain.
 
-- 💬 Ask me about **Qiskit, Quantum optimization, Quantum Algorithms**
+Do you want to contact me? <a href="https://www.linkedin.com/in/awadhootloharkar">![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)</a>
 
-- 📫 Reach me @ **awadhootloharkar007@gmail.com**
-
-## <img src="https://img.icons8.com/external-icongeek26-outline-colour-icongeek26/64/000000/external-rocket-transportation-icongeek26-outline-colour-icongeek26.png" width="25"/> **Languages and Tools:**
-<p align="left">
-<a href="https://www.python.org/"><img src="https://img.icons8.com/nolan/64/python.png"/></a>
-<a href="https://www.cprogramming.com/"><img src="https://img.icons8.com/nolan/64/c.png"/></a>
-<a href="https://code.visualstudio.com/"><img src="https://img.icons8.com/nolan/64/visual-studio.png"/></a>
-<a href="https://git-scm.com/"><img src="https://img.icons8.com/nolan/64/git.png"/></a> 
-<a href="https://github.com/"><img src="https://img.icons8.com/nolan/64/github.png"/></a> 
-
-
-  
-
-
-
-
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=awadhootloharkar&show_icons=true&locale=en&layout=compact" alt="awadhootloharkar" /></p>
-
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=awadhootloharkar&" alt="awadhootloharkar" /></p>
+#### My GitHub Stats
+<img src="https://github-readme-stats.vercel.app/api?username=awadhootloharkar&show_icons=true&theme=gotham" alt="github stats" width="45%" align="left"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs?username=awadhootloharkar&show_icons=true&locale=en&layout=compact" alt="languages" />
