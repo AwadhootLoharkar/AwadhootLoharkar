@@ -2,7 +2,7 @@
 <img src="https://komarev.com/ghpvc/?username=awadhootloharkar&color=brightgreen" alt="watching_count" />
 
 My name is Awadhoot Loharkar.  
-I am originally from India and currently pursuing my Master's in Quantum Technologies and Engineering at Université de Bourgogne, Dijon, France, under the Erasmus Mundus scholarship (QuanTEEM).  
+I am originally from India and currently pursuing my Master's in Quantum Technologies and Engineering under the Erasmus Mundus scholarship (QuanTEEM).  
 I am passionate about quantum physics, engineering, finance, optimization and developing innovative solutions in semi-autonomous drones and vehicles.
 
 
