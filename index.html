@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Awadhoot Loharkar</title>
 <meta name="description" content="Awadhoot Loharkar — Quantum Technologies & Engineering researcher, working on quantum simulation methods for many-body physics and quantum chemistry.">
+<meta property="og:title" content="Awadhoot Loharkar">
+<meta property="og:description" content="Quantum Technologies & Engineering researcher, working on quantum simulation methods for many-body physics and quantum chemistry.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%233b4b8c%22/><text x=%2250%22 y=%2268%22 font-size=%2258%22 font-family=%22Georgia,serif%22 fill=%22white%22 text-anchor=%22middle%22>AL</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -14,19 +19,19 @@
 
 <div class="noise"></div>
 
-<header class="hero">
-  <nav class="nav">
-    <span class="nav-mark">AL</span>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<nav class="nav">
+  <span class="nav-mark">AL</span>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
+<header class="hero">
   <div class="hero-content">
     
     <img class="hero-photo" src="assets/photo.jpg" alt="Photo of Awadhoot Loharkar">
@@ -45,7 +50,7 @@
 
 <main>
 
-  <section id="about" class="section">
+  <section id="about" class="section reveal">
     <h2 class="section-title"><span>01</span> About</h2>
     <div class="section-body">
       
@@ -56,7 +61,7 @@
     </div>
   </section>
 
-  <section id="experience" class="section">
+  <section id="experience" class="section reveal">
     <h2 class="section-title"><span>02</span> Experience</h2>
     <div class="timeline">
       
@@ -129,7 +134,7 @@
     </div>
   </section>
 
-  <section id="research" class="section">
+  <section id="research" class="section reveal">
     <h2 class="section-title"><span>03</span> Research</h2>
     <div class="grid">
       
@@ -157,7 +162,7 @@
     </div>
   </section>
 
-  <section id="publications" class="section">
+  <section id="publications" class="section reveal">
     <h2 class="section-title"><span>04</span> Publications</h2>
     <div class="grid">
       
@@ -178,7 +183,7 @@
     </div>
   </section>
 
-  <section id="education" class="section">
+  <section id="education" class="section reveal">
     <h2 class="section-title"><span>05</span> Education</h2>
     <div class="timeline">
       
@@ -207,29 +212,29 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section reveal">
     <h2 class="section-title"><span>06</span> Skills</h2>
     <div class="skills">
       
       <div class="skill-group">
         <h4>Languages</h4>
-        <p><built-in method items of dict object at 0x7bf184d75580></p>
+        <p><built-in method items of dict object at 0x73e3c7b2ed80></p>
       </div>
       
       <div class="skill-group">
         <h4>Quantum Packages</h4>
-        <p><built-in method items of dict object at 0x7bf184d755c0></p>
+        <p><built-in method items of dict object at 0x73e3c7b2edc0></p>
       </div>
       
       <div class="skill-group">
         <h4>Tools & Libraries</h4>
-        <p><built-in method items of dict object at 0x7bf184d75600></p>
+        <p><built-in method items of dict object at 0x73e3c7b2ee00></p>
       </div>
       
     </div>
   </section>
 
-  <section id="contact" class="section contact-section">
+  <section id="contact" class="section contact-section reveal">
     <h2 class="section-title"><span>07</span> Contact</h2>
     <div class="section-body">
       <p>Based in Kaiserslautern, Germany. Reach out about research collaborations, quantum simulation, or anything quantum-shaped.</p>
@@ -249,6 +254,22 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Gentle fade-in as sections enter the viewport. No-op (sections just show)
+  // if IntersectionObserver isn't supported.
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('in-view'));
+  }
 </script>
 </body>
 </html>

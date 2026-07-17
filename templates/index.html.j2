@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ profile.name }}</title>
 <meta name="description" content="{{ profile.name }} — {{ profile.tagline }}">
+<meta property="og:title" content="{{ profile.name }}">
+<meta property="og:description" content="{{ profile.tagline }}">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%233b4b8c%22/><text x=%2250%22 y=%2268%22 font-size=%2258%22 font-family=%22Georgia,serif%22 fill=%22white%22 text-anchor=%22middle%22>{{ profile.name.split(' ')|map('first')|join('') }}</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -14,19 +19,19 @@
 
 <div class="noise"></div>
 
-<header class="hero">
-  <nav class="nav">
-    <span class="nav-mark">{{ profile.name.split(' ')|map('first')|join('') }}</span>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<nav class="nav">
+  <span class="nav-mark">{{ profile.name.split(' ')|map('first')|join('') }}</span>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
+<header class="hero">
   <div class="hero-content">
     {% if profile.photo %}
     <img class="hero-photo" src="{{ profile.photo }}" alt="Photo of {{ profile.name }}">
@@ -45,7 +50,7 @@
 
 <main>
 
-  <section id="about" class="section">
+  <section id="about" class="section reveal">
     <h2 class="section-title"><span>01</span> About</h2>
     <div class="section-body">
       {% for p in about.paragraphs %}
@@ -54,7 +59,7 @@
     </div>
   </section>
 
-  <section id="experience" class="section">
+  <section id="experience" class="section reveal">
     <h2 class="section-title"><span>02</span> Experience</h2>
     <div class="timeline">
       {% for e in experience %}
@@ -72,7 +77,7 @@
     </div>
   </section>
 
-  <section id="research" class="section">
+  <section id="research" class="section reveal">
     <h2 class="section-title"><span>03</span> Research</h2>
     <div class="grid">
       {% for r in research %}
@@ -86,7 +91,7 @@
     </div>
   </section>
 
-  <section id="publications" class="section">
+  <section id="publications" class="section reveal">
     <h2 class="section-title"><span>04</span> Publications</h2>
     <div class="grid">
       {% for pub in publications %}
@@ -100,7 +105,7 @@
     </div>
   </section>
 
-  <section id="education" class="section">
+  <section id="education" class="section reveal">
     <h2 class="section-title"><span>05</span> Education</h2>
     <div class="timeline">
       {% for ed in education %}
@@ -118,7 +123,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section reveal">
     <h2 class="section-title"><span>06</span> Skills</h2>
     <div class="skills">
       {% for s in skills %}
@@ -130,7 +135,7 @@
     </div>
   </section>
 
-  <section id="contact" class="section contact-section">
+  <section id="contact" class="section contact-section reveal">
     <h2 class="section-title"><span>07</span> Contact</h2>
     <div class="section-body">
       <p>{{ contact.blurb }}</p>
@@ -150,6 +155,22 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Gentle fade-in as sections enter the viewport. No-op (sections just show)
+  // if IntersectionObserver isn't supported.
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('in-view'));
+  }
 </script>
 </body>
 </html>
