@@ -1,0 +1,10 @@
+name: portfolio
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - flask=3.*
+  - jinja2=3.*
+  - pyyaml=6.*
+  - pillow=10.*
+  - pip
