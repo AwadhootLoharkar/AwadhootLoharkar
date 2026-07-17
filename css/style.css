@@ -386,10 +386,10 @@ a:hover { border-color: var(--accent); }
 
 /* Hero photo — a warm gradient ring instead of a flat gray border */
 .hero-photo-ring {
-  width: 136px;
-  height: 136px;
+  width: 96px;
+  height: 96px;
   border-radius: 50%;
-  padding: 4px;
+  padding: 3px;
   margin-bottom: 28px;
   background: linear-gradient(135deg, var(--accent), var(--accent2));
 }
@@ -400,7 +400,7 @@ a:hover { border-color: var(--accent); }
   border-radius: 50%;
   object-fit: cover;
   display: block;
-  border: 3px solid var(--bg);
+  border: 2px solid var(--bg);
 }
 
 @keyframes fade-up {
@@ -421,6 +421,6 @@ a:focus-visible, button:focus-visible {
   .skills { grid-template-columns: 1fr; }
   .nav-links { gap: 14px; }
   .hero-content { padding: 60px 24px 70px; }
-  .hero-photo-ring { width: 100px; height: 100px; margin-bottom: 20px; }
+  .hero-photo-ring { width: 76px; height: 76px; margin-bottom: 20px; }
   .hero-glow { width: 600px; height: 400px; top: -160px; }
 }
