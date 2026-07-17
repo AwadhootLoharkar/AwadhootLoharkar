@@ -1,95 +1,88 @@
 profile:
   name: Awadhoot Loharkar
   location: Kaiserslautern, Germany
-  tagline: "Quantum Technologies & Engineering researcher, working on quantum simulation methods for many-body physics and quantum chemistry."
+  tagline: Quantum Technologies & Engineering researcher, working on quantum simulation methods for many-body physics and quantum chemistry.
   photo: assets/photo.jpg
   email: awadhootloharkar007@gmail.com
   github: https://github.com/AwadhootLoharkar
   linkedin: https://linkedin.com/in/awadhoot-loharkar
   resume: assets/CV_AwadhootLoharkar.pdf
-
 about:
   paragraphs:
-    - "I'm an M.Sc. student in Quantum Technologies and Engineering at the QuanTEEM Erasmus Mundus Joint Master programme (Université de Bourgogne & RPTU Kaiserslautern), and an Erasmus Mundus Scholarship holder. My work sits at the intersection of quantum simulation, tensor networks, and quantum chemistry — building tools that make correlated many-body systems tractable on near-term quantum hardware and HPC clusters."
-    - "I'm currently completing my master's thesis at Fraunhofer ITWM, developing a hybrid DMET framework for simulating strongly correlated protein-ligand systems, and building QuEnAIS, an open-source simulation pipeline."
-
+  - I'm an M.Sc. student in Quantum Technologies and Engineering at the QuanTEEM Erasmus Mundus Joint Master programme (Université de Bourgogne & RPTU Kaiserslautern), and an Erasmus Mundus Scholarship holder. My work sits at the intersection of quantum simulation, tensor networks, and quantum chemistry — building tools that make correlated many-body systems tractable on near-term quantum hardware and HPC clusters.
+  - I'm currently completing my master's thesis at Fraunhofer ITWM, developing a hybrid DMET framework for simulating strongly correlated protein-ligand systems, and building QuEnAIS, an open-source simulation pipeline.
 experience:
-  - title: "Master Thesis — QuEnAIS Project"
-    org: "Fraunhofer ITWM, Kaiserslautern"
-    date: "Mar 2026 — Sept 2026"
-    description: "Engineered a hybrid DMET framework for quantum simulation of strongly correlated protein-ligand systems, mapping high-dimensional active spaces onto optimized quantum circuits. Deploying quantum impurity solvers (SQD, SKQD, SqDRIFT) and building self-consistent DMET loops to extract quantum descriptors (HOMO/LUMO, Fukui indices)."
-  - title: "Semester Research Student"
-    org: "Sebastian Eggert Group, RPTU Kaiserslautern"
-    date: "Oct 2025 — Feb 2026"
-    description: "Researched the ground-state of the 1D extended anyonic Hubbard model using DMRG, VQE, and SKQD. Demonstrated superior convergence of SKQD over VQE — 0.05% vs. 10% relative error against DMRG for 5–15 site lattices."
-  - title: "Research Assistant (HiWi)"
-    org: "Fraunhofer ITWM, Kaiserslautern"
-    date: "Jun 2025 — Feb 2026"
-    description: "Researched scalable multi-node, multi-GPU tensor-network simulations for quantum many-body physics and chemistry using QUIMB, ITensors, Qiskit, and cuQuantum on HPC clusters. Contributed to the DLR-funded QUANT²AI project, benchmarking QML pipelines across classical and quantum backends."
-  - title: "Quantum Research Intern"
-    org: "Creed & Bear · Remote"
-    date: "Dec 2023 — Sep 2024"
-    description: "Contributed to hybrid quantum-classical optimization for power distribution networks (TCS Quantum Challenge 2023); investigated post-quantum cryptography vulnerabilities."
-  - title: "Quantum Research Intern — QWorld Programme"
-    org: "Classiq Technologies · Remote"
-    date: "Aug 2023 — Dec 2023"
-    description: "Implemented quantum oracle construction and amplitude amplification circuits on the Classiq synthesis platform; worked on high-level-to-gate-level compilation and circuit depth optimisation for near-term hardware."
-  - title: "Quantum Intern"
-    org: "Sillicofeller Quantum, Delhi"
-    date: "May 2023 — Aug 2023"
-    description: "Designed custom 5-qubit superconducting circuit layouts using Qiskit Metal for application-specific quantum processors; developed familiarity with transmon-based device geometry and coupling structures."
-
+- title: Master Thesis — QuEnAIS Project
+  org: Fraunhofer ITWM, Kaiserslautern
+  date: Mar 2026 — Sept 2026
+  description: Engineered a hybrid DMET framework for quantum simulation of strongly correlated protein-ligand systems, mapping high-dimensional active spaces onto optimized quantum circuits. Deploying quantum impurity solvers (SQD, SKQD, SqDRIFT) and building self-consistent DMET loops to extract quantum descriptors (HOMO/LUMO, Fukui indices).
+- title: Semester Research Student
+  org: Sebastian Eggert Group, RPTU Kaiserslautern
+  date: Oct 2025 — Feb 2026
+  description: Researched the ground-state of the 1D extended anyonic Hubbard model using DMRG, VQE, and SKQD. Demonstrated superior convergence of SKQD over VQE — 0.05% vs. 10% relative error against DMRG for 5–15 site lattices.
+- title: Research Assistant (HiWi)
+  org: Fraunhofer ITWM, Kaiserslautern
+  date: Jun 2025 — Feb 2026
+  description: Researched scalable multi-node, multi-GPU tensor-network simulations for quantum many-body physics and chemistry using QUIMB, ITensors, Qiskit, and cuQuantum on HPC clusters. Contributed to the DLR-funded QUANT²AI project, benchmarking QML pipelines across classical and quantum backends.
+- title: Quantum Research Intern
+  org: Creed & Bear · Remote
+  date: Dec 2023 — Sep 2024
+  description: Contributed to hybrid quantum-classical optimization for power distribution networks (TCS Quantum Challenge 2023); investigated post-quantum cryptography vulnerabilities.
+- title: Quantum Research Intern — QWorld Programme
+  org: Classiq Technologies · Remote
+  date: Aug 2023 — Dec 2023
+  description: Implemented quantum oracle construction and amplitude amplification circuits on the Classiq synthesis platform; worked on high-level-to-gate-level compilation and circuit depth optimisation for near-term hardware.
+- title: Quantum Intern
+  org: Sillicofeller Quantum, Delhi
+  date: May 2023 — Aug 2023
+  description: Designed custom 5-qubit superconducting circuit layouts using Qiskit Metal for application-specific quantum processors; developed familiarity with transmon-based device geometry and coupling structures.
 research:
-  - title: "QuEnAIS"
-    subtitle: "Open-source DMET simulation pipeline"
-    date: "2026 — in active development"
-    description: "Open-source software package implementing a hybrid DMET simulation pipeline for quantum chemistry, resolving electron correlation in pharmacologically relevant molecules."
-    link: https://github.com/AwadhootVijayLoharkar/quenais
-    link_label: "View on GitHub ↗"
-  - title: "Iterative Hamiltonian Mapping in SqDRIFT"
-    subtitle: "Python · Qiskit · NumPy · Quantum Simulation"
-    date: "May 2026"
-    description: "Modified the SqDRIFT algorithm to support iterative addition of Hamiltonian terms with a custom drift-coefficient sampling scheme, reducing gate overhead versus standard randomized Trotterization. Simulated on real superconducting hardware."
-    link: ""
-    link_label: ""
-  - title: "Tensor-Network Benchmarking on GPU/HPC"
-    subtitle: "QUIMB · ITensors · Qiskit · cuQuantum"
-    date: "2025 — 2026"
-    description: "Unified Python toolkit for multi-node, multi-GPU tensor-network simulation of quantum many-body systems and quantum chemistry; benchmarked accuracy, scaling, and multi-GPU performance on custom Hamiltonians."
-    link: ""
-    link_label: ""
-
+- title: QuEnAIS
+  subtitle: Open-source DMET simulation pipeline
+  date: 2026 — in active development
+  description: Open-source software package implementing a hybrid DMET simulation pipeline for quantum chemistry, resolving electron correlation in pharmacologically relevant molecules.
+  link: https://github.com/AwadhootVijayLoharkar/quenais
+  link_label: View on GitHub ↗
+- title: Iterative Hamiltonian Mapping in SqDRIFT
+  subtitle: Python · Qiskit · NumPy · Quantum Simulation
+  date: May 2026
+  description: Modified the SqDRIFT algorithm to support iterative addition of Hamiltonian terms with a custom drift-coefficient sampling scheme, reducing gate overhead versus standard randomized Trotterization. Simulated on real superconducting hardware.
+  link: ''
+  link_label: ''
+- title: Tensor-Network Benchmarking on GPU/HPC
+  subtitle: QUIMB · ITensors · Qiskit · cuQuantum
+  date: 2025 — 2026
+  description: Unified Python toolkit for multi-node, multi-GPU tensor-network simulation of quantum many-body systems and quantum chemistry; benchmarked accuracy, scaling, and multi-GPU performance on custom Hamiltonians.
+  link: ''
+  link_label: ''
 publications:
-  - title: "Assessing Algorithmic Robustness of SKQD and VQE in Non-Commuting Many-Body Hamiltonians"
-    venue: "Preprint"
-    date: "2026"
-    description: "Comparative robustness analysis of SKQD and VQE algorithms applied to non-commuting many-body Hamiltonians."
-    link: https://doi.org/10.13140/RG.2.2.21386.63683
-    link_label: "Read preprint ↗"
-  - title: "Performance Analysis of Tensor Network Libraries for GPU-Based Quantum Simulation of One-Dimensional Extended Hubbard Model"
-    venue: "Manuscript in preparation"
-    date: "2026"
-    description: "Performance analysis of tensor network libraries for GPU-based quantum simulation of the one-dimensional extended Hubbard model."
-    link: ""
-    link_label: ""
-
+- title: Assessing Algorithmic Robustness of SKQD and VQE in Non-Commuting Many-Body Hamiltonians
+  venue: Preprint
+  date: '2026'
+  description: Comparative robustness analysis of SKQD and VQE algorithms applied to non-commuting many-body Hamiltonians.
+  link: https://doi.org/10.13140/RG.2.2.21386.63683
+  link_label: Read preprint ↗
+- title: Performance Analysis of Tensor Network Libraries for GPU-Based Quantum Simulation of One-Dimensional Extended Hubbard Model
+  venue: Manuscript in preparation
+  date: '2026'
+  description: Performance analysis of tensor network libraries for GPU-based quantum simulation of the one-dimensional extended Hubbard model.
+  link: ''
+  link_label: ''
 education:
-  - degree: "M.Sc. Quantum Technologies and Engineering"
-    org: "QuanTEEM — Erasmus Mundus Joint Master, France & Germany"
-    date: "Sept 2024 — Sept 2026"
-    description: "Erasmus Mundus Scholarship holder (~4% acceptance rate). Sem 1 (Université de Bourgogne): 15.59/20 — Sem 2 & 3 (RPTU Kaiserslautern): 1.7. Coursework: Quantum Optics, Quantum Field Theory, Quantum Mechanics, Quantum Algorithms, Quantum Control, Solid-State Physics, Numerical Methods, Quantum Computing in AI."
-  - degree: "B.Sc. Physics"
-    org: "Fergusson College, Pune, India"
-    date: "Sept 2020 — Apr 2023"
-    description: "Grade: 9.00/10 CGPA. Thesis: Analysis of QKD protocols for post-quantum cryptographic frameworks."
-
+- degree: M.Sc. Quantum Technologies and Engineering
+  org: QuanTEEM — Erasmus Mundus Joint Master, France & Germany
+  date: Sept 2024 — Sept 2026
+  description: 'Erasmus Mundus Scholarship holder (~4% acceptance rate). Sem 1 (Université de Bourgogne): 15.59/20 — Sem 2 & 3 (RPTU Kaiserslautern): 1.7. Coursework: Quantum Optics, Quantum Field Theory, Quantum Mechanics, Quantum Algorithms, Quantum Control, Solid-State Physics, Numerical Methods, Quantum Computing in AI.'
+- degree: B.Sc. Physics
+  org: Fergusson College, Pune, India
+  date: Sept 2020 — Apr 2023
+  description: 'Grade: 9.00/10 CGPA. Thesis: Analysis of QKD protocols for post-quantum cryptographic frameworks.'
 skills:
-  - group: "Languages"
-    items: "Python, Julia, C, MATLAB, Bash"
-  - group: "Quantum Packages"
-    items: "Qiskit, CUDA-Q, Classiq, PennyLane, qBraid, cuQuantum"
-  - group: "Tools & Libraries"
-    items: "TensorFlow, Keras, Scikit-learn, NumPy, Pandas, Matplotlib, Git, Linux, MPI, PySCF, ITensors, Block2, QUIMB"
-
+- group: Languages
+  items: Python, Julia, C, MATLAB, Bash
+- group: Quantum Packages
+  items: Qiskit, CUDA-Q, Classiq, PennyLane, qBraid, cuQuantum
+- group: Tools & Libraries
+  items: TensorFlow, Keras, Scikit-learn, NumPy, Pandas, Matplotlib, Git, Linux, MPI, PySCF, ITensors, Block2, QUIMB
 contact:
-  blurb: "Based in Kaiserslautern, Germany. Reach out about research collaborations, quantum simulation, or anything quantum-shaped."
+  blurb: Based in Kaiserslautern, Germany. Reach out about research collaborations, quantum simulation, or anything quantum-shaped.
