@@ -32,9 +32,10 @@
 </nav>
 
 <header class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
   <div class="hero-content">
     {% if profile.photo %}
-    <img class="hero-photo" src="{{ profile.photo }}" alt="Photo of {{ profile.name }}">
+    <div class="hero-photo-ring"><img class="hero-photo" src="{{ profile.photo }}" alt="Photo of {{ profile.name }}"></div>
     {% endif %}
     <p class="eyebrow">{{ profile.location }}</p>
     <h1>{{ profile.name }}</h1>
@@ -43,7 +44,7 @@
       <a href="mailto:{{ profile.email }}">Email</a>
       <a href="{{ profile.github }}" target="_blank" rel="noopener">GitHub</a>
       <a href="{{ profile.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="{{ profile.resume }}" target="_blank" rel="noopener">Résumé ↗</a>
+      <a href="{{ profile.resume }}" target="_blank" rel="noopener" class="cta">Résumé ↗</a>
     </div>
   </div>
 </header>
@@ -129,7 +130,11 @@
       {% for s in skills %}
       <div class="skill-group">
         <h4>{{ s.group }}</h4>
-        <p>{{ s.items }}</p>
+        <div class="tag-row">
+          {% for item in s['items'].split(',') %}
+          <span class="tag">{{ item.strip() }}</span>
+          {% endfor %}
+        </div>
       </div>
       {% endfor %}
     </div>
