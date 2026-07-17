@@ -105,27 +105,10 @@ a:hover { border-color: var(--accent); }
 .nav-links a:hover { color: var(--ink); }
 .nav-links a:hover::after { transform: scaleX(1); }
 
-/* Hero — soft two-tone gradient wash behind the content */
-.hero { position: relative; overflow: hidden; }
-
-.hero-glow {
-  position: absolute;
-  top: -220px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 900px;
-  height: 560px;
-  background:
-    radial-gradient(closest-side, color-mix(in srgb, var(--accent) 22%, transparent), transparent 70%) 20% 50% / 60% 100% no-repeat,
-    radial-gradient(closest-side, color-mix(in srgb, var(--accent2) 20%, transparent), transparent 70%) 80% 60% / 55% 100% no-repeat;
-  filter: blur(10px);
-  pointer-events: none;
-  z-index: 0;
-}
+/* Hero */
+.hero { position: relative; }
 
 .hero-content {
-  position: relative;
-  z-index: 1;
   max-width: var(--max);
   margin: 0 auto;
   padding: 84px 24px 100px;
@@ -422,5 +405,4 @@ a:focus-visible, button:focus-visible {
   .nav-links { gap: 14px; }
   .hero-content { padding: 60px 24px 70px; }
   .hero-photo-ring { width: 76px; height: 76px; margin-bottom: 20px; }
-  .hero-glow { width: 600px; height: 400px; top: -160px; }
 }
