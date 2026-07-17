@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>About</h1>
+<form method="post">
+  <label>Paragraphs (separate paragraphs with a blank line)</label>
+  <textarea name="paragraphs" style="min-height:220px;">{{ paragraphs }}</textarea>
+  <button type="submit">Save &amp; rebuild</button>
+</form>
+{% endblock %}

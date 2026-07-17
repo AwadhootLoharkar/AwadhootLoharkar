@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Edit your site</h1>
+<p style="color:#6b6f76; font-size:.92rem;">Every save writes to <code>data.yaml</code> and regenerates <code>index.html</code> automatically. Nothing is pushed to GitHub &mdash; commit and push yourself when you're happy with it.</p>
+
+<div class="dashboard-grid">
+  <a href="{{ url_for('edit_profile') }}">
+    <strong>Profile &amp; photo</strong>
+    <div class="count">Name, tagline, links, headshot</div>
+  </a>
+  <a href="{{ url_for('edit_about') }}">
+    <strong>About</strong>
+    <div class="count">{{ data.about.paragraphs|length }} paragraph(s)</div>
+  </a>
+  {% for key, s in sections.items() %}
+  <a href="{{ url_for('edit_section', name=key) }}">
+    <strong>{{ s.label }}</strong>
+    <div class="count">{{ data[key]|length }} item(s)</div>
+  </a>
+  {% endfor %}
+  <a href="{{ url_for('edit_contact') }}">
+    <strong>Contact</strong>
+    <div class="count">Closing blurb</div>
+  </a>
+</div>
+
+<form method="post" action="{{ url_for('rebuild') }}">
+  <button type="submit" class="secondary">Rebuild site now (no changes)</button>
+</form>
+{% endblock %}

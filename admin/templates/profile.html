@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Profile &amp; photo</h1>
+<form method="post" enctype="multipart/form-data">
+  <img class="photo-preview" src="../assets/{{ profile.photo.split('/')[-1] }}" onerror="this.style.display='none'">
+  <label>Upload / replace photo (auto-cropped to a square)</label>
+  <input type="file" name="photo" accept="image/*">
+
+  <label>Name</label>
+  <input type="text" name="name" value="{{ profile.name }}">
+
+  <label>Location</label>
+  <input type="text" name="location" value="{{ profile.location }}">
+
+  <label>Tagline</label>
+  <textarea name="tagline">{{ profile.tagline }}</textarea>
+
+  <label>Email</label>
+  <input type="email" name="email" value="{{ profile.email }}">
+
+  <label>GitHub URL</label>
+  <input type="url" name="github" value="{{ profile.github }}">
+
+  <label>LinkedIn URL</label>
+  <input type="url" name="linkedin" value="{{ profile.linkedin }}">
+
+  <button type="submit">Save &amp; rebuild</button>
+</form>
+{% endblock %}

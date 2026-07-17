@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ label }}</h1>
+<form method="post">
+  {% for item in items %}
+  {% set i = loop.index0 %}
+  <div class="card">
+    <div class="row-actions" style="justify-content: space-between; align-items:center;">
+      <span class="item-index">Item {{ loop.index }}</span>
+      <label style="margin:0; display:flex; align-items:center; gap:6px; font-size:.8rem;">
+        <input type="checkbox" name="row-{{ i }}-remove" style="width:auto;"> remove this item
+      </label>
+    </div>
+    {% for field in fields %}
+      <label>{{ field.replace('_', ' ')|capitalize }}</label>
+      {% if field == 'description' %}
+      <textarea name="row-{{ i }}-{{ field }}">{{ item.get(field, '') }}</textarea>
+      {% else %}
+      <input type="text" name="row-{{ i }}-{{ field }}" value="{{ item.get(field, '') }}">
+      {% endif %}
+    {% endfor %}
+  </div>
+  {% endfor %}
+
+  <button type="submit">Save &amp; rebuild</button>
+</form>
+
+<form method="post" action="{{ url_for('add_item', name=name) }}">
+  <button type="submit" class="secondary">+ Add new {{ label[:-1] if label.endswith('s') else label }} item</button>
+</form>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Contact</h1>
+<form method="post">
+  <label>Closing blurb</label>
+  <textarea name="blurb">{{ blurb }}</textarea>
+  <button type="submit">Save &amp; rebuild</button>
+</form>
+{% endblock %}
